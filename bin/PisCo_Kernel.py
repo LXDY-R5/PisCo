@@ -1,4 +1,5 @@
 import sys
+import os
 
 def rc(cmd):
     lst = cmd.split()
@@ -18,6 +19,8 @@ def rc(cmd):
         quit()
     elif lst[0] == "eval":
         rc(txt)
+    elif lst[0] == "eval":
+        os.system(txt)
     else:
         print("Error!")
         print("Code:'" + cmd + "' Not a Command")
