@@ -19,7 +19,7 @@ def rc(cmd):
         quit()
     elif lst[0] == "eval":
         rc(txt)
-    elif lst[0] == "eval":
+    elif lst[0] == "system":
         os.system(txt)
     else:
         print("Error!")
